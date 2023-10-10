@@ -1,5 +1,4 @@
 @use 'base' as *;
-
 nav {
     background-color: #5c6362;
 .nav__container {
@@ -52,8 +51,9 @@ nav {
     }
 }
 }
+
 .banner {
-    background-image: url("../assets/mockup_home.png");
+    background-image: url("../assets/mockup_background.png");
     background-size: cover;
     width: 100%;
     height: 150%;
@@ -91,10 +91,8 @@ header {
         padding: 15px 45px;
         border: 2px solid transparent;
         font-size: 19px;
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+        text-decoration: none;
+        color: #fff;
         &:hover {
             border: 2px solid #2FA293;
             background-color: #56605E;
@@ -112,6 +110,7 @@ header {
         @include flexLayout();
         flex-direction: column; 
         h2 {
+            padding-top: 50px;
             padding-bottom: 30px;
             font-size: 26px;
         }
@@ -151,11 +150,15 @@ header {
         margin-bottom: 10px; /* Margin on the bottom */
         margin-left: 90px; /* Margin on the left */
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        &:hover {
+            cursor: pointer;
+        }
     }
     .spotlight1, .spotlight2, .spotlight3 {
         font-family: $font-krona;
         justify-content: center;
         align-items: center;
+
         h3 {
             padding-top: 20px;
             @include flexLayout();
@@ -204,15 +207,16 @@ header {
         border: 2px solid transparent;
         font-size: 19px;
         text-decoration: none;
+        font-family: $font-krona;
+        color: #000;
         a {
-            text-decoration: none;
             color: #000;
-            font-family: $font-krona;
             font-size: 15px;
         }
         &:hover {
             border: 2px solid #fff;
-            background-color: #d5d5d5;
+            background-color: transparent;
+            color: #fff;
             cursor: pointer;
            }
     }
@@ -243,3 +247,114 @@ header {
       padding: 10px 0; /* Adjust padding for smaller screens */
     }
   }
+
+  /* Media query for banner */
+  @media (max-width: 768px) {
+    .banner {
+        height: 100%; 
+    }
+}
+  /* Media query for header */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; 
+        bottom: 40px;   
+    }
+
+    .header_between {
+        bottom: 20px;   
+        
+        h3 {
+            padding-right: 20px; 
+        }
+    }
+
+    .shop_button {
+        padding: 10px 30px; 
+    }
+}
+
+/* Media query for tussenstuk */
+@media (max-width: 768px) {
+    .tussenstuk {
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+/* Media query for spotlights */
+@media (max-width: 768px) {
+
+    .spotlights {
+        height: 1900px;
+    }
+
+    h1 {
+        font-size: 24px; 
+        justify-content: center;
+    }
+
+    p {
+        font-size: 16px; 
+
+    }
+
+    .fotos {
+        flex-direction: column;
+
+        img {
+            width: 250px;
+            margin: 25px; 
+        }
+    }
+    .spotlight1, .spotlight2, .spotlight3 {
+        h3 {
+            padding-top: 10px; 
+        }
+
+        p {
+            font-size: 14px; 
+            padding-top: 10px; 
+        }
+    }
+}
+/* Media query for tussenstuk2 */
+@media (max-width: 768px) {
+    .posterrover_littleTekst {
+    p {
+        font-size: 20px; 
+        padding-bottom: 10px; 
+    }
+}
+@media (max-width: 480px) {
+    p {
+        font-size: 18px; 
+        padding-bottom: 6px; 
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .banner2 {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    .browse_button {
+        font-size: 3vw; 
+    }
+}
+}
