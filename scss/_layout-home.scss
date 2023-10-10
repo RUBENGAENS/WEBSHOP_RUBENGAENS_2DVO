@@ -1,6 +1,5 @@
 @use 'base' as *;
 nav {
-    background-color: #5c6362;
 .nav__container {
    position: fixed; 
     background-color: #5c6362;
@@ -11,11 +10,11 @@ nav {
     z-index: 100000;
     font-family: $font-lexend;
     padding: 5px;
-    padding-left: 150px;
+    padding-left: 190px;
     padding-right: 130px;
 
     .logo_nav {
-        max-width: 160px;
+        max-width: 150px;
     }
 
     ul {
@@ -23,8 +22,10 @@ nav {
         
         li {
             list-style-type: none;
-            padding: 15px;
-           
+            padding: 10px;
+           span {
+                color: #F59D72;
+             }
 
             .login_button {
                 background-color: #F59D72;
@@ -40,6 +41,7 @@ nav {
             }
         }
         a {
+            padding-left: 25px;
             text-decoration: none;
             color: #fff;
             font-weight: 500;
@@ -132,6 +134,7 @@ header {
     h1 {
         @include textHead (); 
         padding-bottom: 30px;
+        padding-top: 80px;
     }
     p {
         font-size: 18px;
