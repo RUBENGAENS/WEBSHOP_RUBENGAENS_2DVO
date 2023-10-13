@@ -103,7 +103,6 @@ header {
            }
     }
 }
-
 .tussenstuk {
         background-color: #000;
         height: 320px;
@@ -137,7 +136,7 @@ header {
         padding-bottom: 30px;
         padding-top: 80px;
     }
-    p {
+    .popular {
         font-size: 18px;
     }
     .fotos {
@@ -163,7 +162,6 @@ header {
         font-family: $font-krona;
         justify-content: center;
         align-items: center;
-
         h3 {
             padding-top: 20px;
             @include flexLayout();
@@ -229,15 +227,14 @@ header {
 }
 
 
-
-
 /* Media query for navbar */
 @media screen and (max-width: 768px) {
     nav .nav__container {
       flex-direction: column; 
       align-items: center; 
       position: relative;
-      
+      padding-left: 130px;
+      justify-content: center;
     }
   
     .logo_nav {
@@ -247,12 +244,15 @@ header {
     ul {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      li {
+        justify-content: center;
+        .login_button {
+            justify-content: center;
+      }
     }
-  
-    ul li {
-      padding: 10px 0; /* Adjust padding for smaller screens */
-    }
-  }
+}
+}
 
   /* Media query for banner */
   @media (max-width: 768px) {
@@ -292,16 +292,33 @@ header {
     }
    }
 }
-
+@media (max-width: 480px) {
+    header {
+     h1 {
+         font-size: 18px; 
+         bottom: 40px; 
+         display: flex;
+         justify-content: center;  
+     }
+     .header_between {
+        h3 {
+            font-size: 15px;
+            justify-content: center;
+            display: flex;
+            padding: 0;
+            padding-bottom: 15px;
+        }
+     }
+    }
+}
 /* Media query for tussenstuk */
 @media (max-width: 768px) {
     .tussenstuk {
-    h2, span {
-        font-size: 22px;
+    h2 {
+        font-size: 20px;
         display: flex;
         justify-content: center;
     }
-
     p {
         font-size: 16px;
         display: flex;
@@ -311,39 +328,40 @@ header {
 }
 @media (max-width: 480px) {
     .tussenstuk {
-    h2, span {
-        font-size: 18px;
+    h2{
+        font-size: 15px;
     }
     p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }}
 /* Media query for spotlights */
 @media (max-width: 900px) {
-
-    .spotlights {
-        height: 1900px;
+.spotlights {
+        height: 1500px;
+        width: 100%;
+        .fotos {
+            padding: 0;
+        }
         h1 {
-            font-size: 24px; 
+            font-size: 26px; 
             display: flex;
             justify-content: center;
         }
-    }
-
-    p {
-        font-size: 16px; 
-
-    }
-
-    .fotos {
-        flex-direction: column;
-
-        img {
-            width: 250px;
-            margin: 25px; 
+            img {
+                width: 100%;
+            }
+        }
+        .picture {
+            width: 200px;
         }
     }
+    .popular {
+        font-size: 16px; 
+        margin-bottom: 45px;
+    }
     .spotlight1, .spotlight2, .spotlight3 {
+        width: 100%;
         h3 {
             padding-top: 10px; 
         }
@@ -353,23 +371,25 @@ header {
             padding-top: 10px; 
         }
     }
-}
+
 /* Media query for tussenstuk2 */
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .posterrover_littleTekst {
     p {
-        font-size: 20px; 
+        font-size: 16px; 
         padding-bottom: 10px; 
     }
 }
 @media (max-width: 480px) {
+    .posterrover_littleTekst {
+        height: 330px;
     p {
-        font-size: 18px; 
+        font-size: 14px; 
         padding-bottom: 6px; 
     }
 }
 }
-
+}
 @media (max-width: 768px) {
     .banner2 {
     h1 {
