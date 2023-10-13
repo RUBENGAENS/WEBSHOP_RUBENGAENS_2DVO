@@ -54,6 +54,7 @@
             </ul>
         </div>
     </nav>
+    
     <section class="banner"></section>
 
     <header>
@@ -71,11 +72,12 @@
 
     <section class="spotlights">
         <h1>IN THE SPOTLIGHTS</h1>
-        <p>The most popular</p>
+        <p class="popular">The most popular</p>
 
         <div class="fotos">
             <div class="spotlight1">
-                <img class="picture" src="assets/surfing_foto.png" alt="foto1">
+                <img src="assets/surfing_foto.png" class="picture" onmouseover="changeImage(1,this)"
+                onmouseout="changeImage(2,this)" alt="foto1">
                 <h3>Surfing</h3>
                 <p>from 24,99 EUR</p>
             </div>
@@ -104,7 +106,5 @@
         <h1>SIMPLE, <br> COLORFUL DESIGNS</h1>
         <p><a href="shop.html" class="browse_button">EXPLORE ALL POSTERS</a></p>
     </section>
-
-    
 </body>
 </html>

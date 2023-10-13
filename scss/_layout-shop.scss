@@ -63,8 +63,7 @@ section {
 }
 section {
 .fotos {
-    padding-top: 70px;
-    padding-bottom: 60px;
+
     justify-content: center;
     align-items: center;
     display: flex;
@@ -99,3 +98,52 @@ section {
 }
 }
 
+@media (max-width: 768px) {
+    .heading_posters {
+        padding-bottom: 40px;
+        .buttons {
+            input[type="radio"] {
+                width: 15px;
+                height: 15px;
+            }
+            input[type=radio]::before {
+                width: 15px;
+                height: 15px;
+            }
+            .collections {
+                font-size: 25px;
+                padding-top: 30px;
+            }
+            .all_buttons {
+                display: flex;
+                flex-direction: column;
+            }
+            .bt-1, .bt-2, .bt-3, .bt-4 {
+                align-items: start;
+                display: flex;
+                .buttons1, .buttons2, .buttons3, .buttons4 {
+                    font-size: 15px;
+                }
+            }
+        }
+      .heading_shop {
+        padding-top: 100px;
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 13px;
+        }
+
+    }
+    @media (max-width: 900px) {
+        section {
+        .fotos {
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+}
+}
+    }
+}

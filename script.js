@@ -13,3 +13,17 @@ smallimg[2].onclick = function () {
 smallimg[3].onclick = function () {
     mainImg.src = smallimg[3].src;
 }
+
+
+
+function changeImage (x,imgage) 
+{
+if (x == 1)
+{
+imgage.src = 'assets/surfing_mockup.png';
+}
+if (x == 2)
+{
+imgage.src = 'assets/surfing_foto.png';
+}
+}

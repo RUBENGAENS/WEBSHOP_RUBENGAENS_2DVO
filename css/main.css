@@ -145,7 +145,7 @@ header .shop_button:hover {
   padding-bottom: 30px;
   padding-top: 80px;
 }
-.spotlights p {
+.spotlights .popular {
   font-size: 18px;
 }
 .spotlights .fotos {
@@ -250,6 +250,8 @@ header .shop_button:hover {
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-left: 130px;
+    justify-content: center;
   }
   .logo_nav {
     max-width: 100%;
@@ -257,9 +259,13 @@ header .shop_button:hover {
   ul {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   ul li {
-    padding: 10px 0; /* Adjust padding for smaller screens */
+    justify-content: center;
+  }
+  ul li .login_button {
+    justify-content: center;
   }
 }
 /* Media query for banner */
@@ -299,10 +305,25 @@ header .shop_button:hover {
     justify-content: center;
   }
 }
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  header .header_between h3 {
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+}
 /* Media query for tussenstuk */
 @media (max-width: 768px) {
-  .tussenstuk h2, .tussenstuk span {
-    font-size: 22px;
+  .tussenstuk h2 {
+    font-size: 20px;
     display: flex;
     justify-content: center;
   }
@@ -313,51 +334,63 @@ header .shop_button:hover {
   }
 }
 @media (max-width: 480px) {
-  .tussenstuk h2, .tussenstuk span {
-    font-size: 18px;
+  .tussenstuk h2 {
+    font-size: 15px;
   }
   .tussenstuk p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /* Media query for spotlights */
 @media (max-width: 900px) {
   .spotlights {
-    height: 1900px;
+    height: 1500px;
+    width: 100%;
+  }
+  .spotlights .fotos {
+    padding: 0;
   }
   .spotlights h1 {
-    font-size: 24px;
+    font-size: 26px;
     display: flex;
     justify-content: center;
   }
-  p {
-    font-size: 16px;
+  .spotlights img {
+    width: 100%;
   }
-  .fotos {
-    flex-direction: column;
-  }
-  .fotos img {
-    width: 250px;
-    margin: 25px;
-  }
-  .spotlight1 h3, .spotlight2 h3, .spotlight3 h3 {
-    padding-top: 10px;
-  }
-  .spotlight1 p, .spotlight2 p, .spotlight3 p {
-    font-size: 14px;
-    padding-top: 10px;
+  .picture {
+    width: 200px;
   }
 }
+.popular {
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.spotlight1, .spotlight2, .spotlight3 {
+  width: 100%;
+}
+.spotlight1 h3, .spotlight2 h3, .spotlight3 h3 {
+  padding-top: 10px;
+}
+.spotlight1 p, .spotlight2 p, .spotlight3 p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
 /* Media query for tussenstuk2 */
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .posterrover_littleTekst p {
-    font-size: 20px;
+    font-size: 16px;
     padding-bottom: 10px;
   }
 }
-@media (max-width: 768px) and (max-width: 480px) {
-  p {
-    font-size: 18px;
+@media (max-width: 890px) and (max-width: 480px) {
+  .posterrover_littleTekst {
+    height: 330px;
+  }
+  .posterrover_littleTekst p {
+    font-size: 14px;
     padding-bottom: 6px;
   }
 }
@@ -432,8 +465,6 @@ section .buttons .buttons1:hover, section .buttons .buttons2:hover, section .but
 }
 
 section .fotos {
-  padding-top: 70px;
-  padding-bottom: 60px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -470,6 +501,50 @@ section .spotlight1 p, section .spotlight2 p, section .spotlight3 p {
   padding-top: 15px;
 }
 
+@media (max-width: 768px) {
+  .heading_posters {
+    padding-bottom: 40px;
+  }
+  .heading_posters .buttons input[type=radio] {
+    width: 15px;
+    height: 15px;
+  }
+  .heading_posters .buttons input[type=radio]::before {
+    width: 15px;
+    height: 15px;
+  }
+  .heading_posters .buttons .collections {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  .heading_posters .buttons .all_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading_posters .buttons .bt-1, .heading_posters .buttons .bt-2, .heading_posters .buttons .bt-3, .heading_posters .buttons .bt-4 {
+    align-items: start;
+    display: flex;
+  }
+  .heading_posters .buttons .bt-1 .buttons1, .heading_posters .buttons .bt-1 .buttons2, .heading_posters .buttons .bt-1 .buttons3, .heading_posters .buttons .bt-1 .buttons4, .heading_posters .buttons .bt-2 .buttons1, .heading_posters .buttons .bt-2 .buttons2, .heading_posters .buttons .bt-2 .buttons3, .heading_posters .buttons .bt-2 .buttons4, .heading_posters .buttons .bt-3 .buttons1, .heading_posters .buttons .bt-3 .buttons2, .heading_posters .buttons .bt-3 .buttons3, .heading_posters .buttons .bt-3 .buttons4, .heading_posters .buttons .bt-4 .buttons1, .heading_posters .buttons .bt-4 .buttons2, .heading_posters .buttons .bt-4 .buttons3, .heading_posters .buttons .bt-4 .buttons4 {
+    font-size: 15px;
+  }
+  .heading_posters .heading_shop {
+    padding-top: 100px;
+  }
+  .heading_posters .heading_shop h1 {
+    font-size: 40px;
+  }
+  .heading_posters .heading_shop p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) and (max-width: 900px) {
+  .heading_posters section .fotos {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
 #prodetails .single-pro-imgage {
   width: 380px;
 }
@@ -487,29 +562,29 @@ section .spotlight1 p, section .spotlight2 p, section .spotlight3 p {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-#prodetails {
+#prodetails, .section-pt1 {
   display: flex;
   padding-top: 150px;
   justify-content: center;
   padding-left: 100px;
 }
-#prodetails .head_price {
+#prodetails .head_price, .section-pt1 .head_price {
   font-family: "Candal", sans-serif;
   font-size: 50px;
 }
-#prodetails .single-pro-details {
+#prodetails .single-pro-details, .section-pt1 .single-pro-details {
   width: 50%;
   padding: 80px;
   padding-bottom: 50px;
 }
-#prodetails .single-pro-details select {
+#prodetails .single-pro-details select, .section-pt1 .single-pro-details select {
   display: block;
   padding: 8px 10px;
   margin-bottom: 20px;
   border: 2px solid #000;
   border-radius: 50px;
 }
-#prodetails .single-pro-details input {
+#prodetails .single-pro-details input, .section-pt1 .single-pro-details input {
   width: 50px;
   height: 47px;
   padding-left: 18px;
@@ -519,13 +594,13 @@ section .spotlight1 p, section .spotlight2 p, section .spotlight3 p {
   border-right: none;
   border-top: none;
 }
-#prodetails .single-pro-details select:focus {
+#prodetails .single-pro-details select:focus, .section-pt1 .single-pro-details select:focus {
   outline: none;
 }
-#prodetails .single-pro-details input:focus {
+#prodetails .single-pro-details input:focus, .section-pt1 .single-pro-details input:focus {
   outline: none;
 }
-#prodetails .add_button {
+#prodetails .add_button, .section-pt1 .add_button {
   background-color: #000000;
   border-radius: 60px;
   padding: 10px 70px;
@@ -534,35 +609,35 @@ section .spotlight1 p, section .spotlight2 p, section .spotlight3 p {
   text-decoration: none;
   color: #fff;
 }
-#prodetails .add_button:hover {
+#prodetails .add_button:hover, .section-pt1 .add_button:hover {
   border: 2px solid #000000;
   background-color: #ffffff;
   color: #000;
   cursor: pointer;
   transition: 0.2s ease;
 }
-#prodetails .p_price {
+#prodetails .p_price, .section-pt1 .p_price {
   font-family: "Krona One", sans-serif;
   font-size: 20px;
   padding-top: 15px;
 }
-#prodetails .shipping {
+#prodetails .shipping, .section-pt1 .shipping {
   font-family: "Roboto", sans-serif;
   padding-top: 10px;
   font-size: 14px;
   padding-bottom: 40px;
 }
-#prodetails .size {
+#prodetails .size, .section-pt1 .size {
   font-family: "Krona One", sans-serif;
   padding-bottom: 15px;
 }
-#prodetails .prodetails {
+#prodetails .prodetails, .section-pt1 .prodetails {
   font-family: "Krona One", sans-serif;
   font-size: 20px;
   padding-top: 70px;
   padding-bottom: 10px;
 }
-#prodetails .product_tekst {
+#prodetails .product_tekst, .section-pt1 .product_tekst {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 25px;
@@ -597,6 +672,110 @@ section .spotlight1 p, section .spotlight2 p, section .spotlight3 p {
   }
   #prodetails .single-pro-details {
     padding: 0;
+  }
+}
+@media screen and (max-width: 905px) {
+  #prodetails .add_button, .section-pt1 .add_button {
+    padding: 10px 40px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #prodetails, .section-pt1 {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  #prodetails .single-pro-details, .section-pt1 .single-pro-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+  }
+  #prodetails .single-pro-imgage, .section-pt1 .single-pro-imgage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+  #prodetails .head_price, .section-pt1 .head_price {
+    font-family: "Candal", sans-serif;
+    font-size: 40px;
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+  }
+  #prodetails .p_price, .section-pt1 .p_price {
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+  }
+  #prodetails .size, .section-pt1 .size {
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+  }
+  #prodetails .shipping, .section-pt1 .shipping {
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+  }
+  #prodetails .single-pro-details input, .section-pt1 .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    margin: 20px;
+  }
+  #prodetails .single-pro-details select, .section-pt1 .single-pro-details select {
+    margin: 0;
+  }
+  #prodetails .prodetails, .section-pt1 .prodetails {
+    font-family: "Krona One", sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media screen and (max-width: 380px) {
+  #prodetails .single-pro-imgage, .section-pt1 .single-pro-imgage {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .fotooverzicht .f-pro {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .fotos {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .fotos img {
+    width: 100%;
+  }
+  .fotos .picture {
+    width: 200px;
+    margin: 0;
+  }
+  .spotlight1, .spotlight2, .spotlight3 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .spotlight1 h3, .spotlight2 h3, .spotlight3 h3 {
+    padding-top: 10px;
   }
 }
 
