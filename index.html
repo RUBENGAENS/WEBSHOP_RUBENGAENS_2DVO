@@ -27,23 +27,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
 
+    <script src="https://kit.fontawesome.com/2fb07d68d9.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
     <nav>
         <div class="nav__container">
-
             <a href="index.html">
                 <img class="logo_nav" src="assets/Logo ruben art-02.png" alt="logo">
             </a>
 
             <ul>
-                <li ><a href="#"><span>Home</span></a></li>
+                <li ><a href="index.html"><span>Home</span></a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="#" class="login_button">Login</a></li>
+                <li><a href="login.html" class="login_button">Login</a></li>
                 <li><a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                         <path d="M9.37492 22.9166C9.95022 22.9166 10.4166 22.4502 10.4166 21.8749C10.4166 21.2996 9.95022 20.8333 9.37492 20.8333C8.79962 20.8333 8.33325 21.2996 8.33325 21.8749C8.33325 22.4502 8.79962 22.9166 9.37492 22.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -54,57 +54,102 @@
             </ul>
         </div>
     </nav>
-    
-    <section class="banner"></section>
 
-    <header>
+<section class="banner"></section>
+
+<header>
         <h1>BRING SOME COLOR TO YOUR WALLS</h1>
     <div class="header_between">
         <h3>made for any interior</h3>
         <p><a href="shop.html" class="shop_button">Shop now</a></p>
     </div>
-    </header>
+</header>
 
-    <section class="tussenstuk">
+<section class="tussenstuk">
         <h2>Are you looking for new <span>posters?</span></h2>
         <p>then you've come to the right place!</p>
-    </section>
+</section>
 
-    <section class="spotlights">
+<section class="spotlights">
         <h1>IN THE SPOTLIGHTS</h1>
         <p class="popular">The most popular</p>
 
         <div class="fotos">
             <div class="spotlight1">
-                <img src="assets/surfing_foto.png" class="picture" onmouseover="changeImage(1,this)"
-                onmouseout="changeImage(2,this)" alt="foto1">
+                <img src="assets/surfing_foto.png" class="picture" onmouseover="changeImage1(1,this)"
+                onmouseout="changeImage1(2,this)" alt="foto1">
                 <h3>Surfing</h3>
-                <p>from 24,99 EUR</p>
+                <p class="price">from 24,99 EUR</p>
             </div>
 
             <div class="spotlight2">
-                <img class="picture" src="assets/cassette_foto.png" alt="foto2">
+                <img src="assets/cassette_foto.png" class="picture" onmouseover="changeImage2(1,this)"
+                onmouseout="changeImage2(2,this)" alt="foto2">
                 <h3>Cassette</h3>
-                <p>from 24,99 EUR</p>
+                <p class="price">from 24,99 EUR</p>
             </div>
 
             <div class="spotlight3">
-                <img class="picture" src="assets/cloud_foto.png" alt="foto3">
+                <img src="assets/cloud_foto.png" class="picture" onmouseover="changeImage3(1,this)"
+                onmouseout="changeImage3(2,this)" alt="foto3">
                 <h3>Cloud</h3>
-                <p>from 24,99 EUR</p>
+                <p class="price">from 24,99 EUR</p>
             </div>
         </div>
-    </section>
+</section>
 
-    <section class="posterrover_littleTekst">
+<section class="posterrover_littleTekst">
         <p>Posterrover is a project where I exhibit my posters.</p>
         <p>I want to combine abstract art with surrealistic visuals.</p>
-    </section>
+</section>
 
-    <section class="banner2">
+<section class="banner2">
         
         <h1>SIMPLE, <br> COLORFUL DESIGNS</h1>
         <p><a href="shop.html" class="browse_button">EXPLORE ALL POSTERS</a></p>
-    </section>
+</section>
+
+<footer id="footer">
+    <div class="row">
+        <div class="col">
+        <a href="index.html">
+            <img src="assets/Logo ruben art-02.png" class="logo">
+        </a>
+            <p>High-Quality Prints: Our posters are printed on premium materials to ensure vivid colors and sharp details.</p>
+        </div>
+        <div class="col">
+            <h3>OFFICE</h3>
+            <p>Elfde-Liniestraat 24, 3500</p>
+            <p>Hasselt, BELGUIM</p>
+            <p class="email-id">info@posterrover.com</p>
+            <h4>+32 412 34 45 67</h4>
+        </div>
+        <div class="col">
+            <h3>LINKS</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Enter you e-mail id" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Made for WebExpert - 2DVO - © Ruben Gaens
+    </p>
+</footer>
+
 </body>
 </html>

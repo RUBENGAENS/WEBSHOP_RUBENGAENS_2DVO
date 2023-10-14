@@ -1,7 +1,6 @@
 @use 'base' as *;
 
 section {
-    padding-bottom: 80px;
 .heading_shop {
         @include flexLayout ();
         flex-direction: column;
@@ -61,42 +60,58 @@ section {
       }
 }
 }
-section {
-.fotos {
+.spotlights_shop {
+        font-family: $font-krona;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        h1 {
+            @include textHead (); 
+            padding-bottom: 30px;
+        }
+        .popular {
+            font-size: 18px;
+        }
+        .fotos {
+            padding-top: 70px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .picture {
+            width: 270px;
+            align-content: center;
+            margin-top: 10px; 
+            margin-right: 90px; 
+            margin-bottom: 10px; 
+            margin-left: 90px; 
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            &:hover {
+                cursor: pointer;
+            }
+        
+    }
+        .spotlight1, .spotlight2, .spotlight3 {
+            font-family: $font-krona;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                padding-top: 20px;
+                @include flexLayout();
+            }
+            p {
+                font-family: $font-roboto;
+                @include flexLayout();
+                font-size: 15px;
+                padding-top: 15px;
+            }
+        }
+    }
 
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.picture {
-    width: 270px;
-    align-content: center;
-    margin-top: 10px; /* Margin on the top */
-    margin-right: 90px; /* Margin on the right */
-    margin-bottom: 10px; /* Margin on the bottom */
-    margin-left: 90px; /* Margin on the left */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 
-.spotlight1, .spotlight2, .spotlight3 {
-    font-family: $font-krona;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-        cursor: pointer;
-    }
-    h3 {
-        padding-top: 20px;
-        @include flexLayout();
-    }
-    p {
-        font-family: $font-roboto;
-        @include flexLayout();
-        font-size: 15px;
-        padding-top: 15px;
-    }
-}
-}
+
+
 
 @media (max-width: 768px) {
     .heading_posters {
@@ -136,14 +151,5 @@ section {
         }
 
     }
-    @media (max-width: 900px) {
-        section {
-        .fotos {
-            flex-direction: column;
-            width: 100%;
-            padding: 0;
-        }
 }
-}
-    }
 }

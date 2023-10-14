@@ -1,22 +1,19 @@
-const mainImg = document.getElementById('mainImg');
-const smallimg = document.getElementsByClassName ('small-img');
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-smallimg[0].onclick = function () {
-    mainImg.src = smallimg[0].src;
-}
-smallimg[1].onclick = function () {
-    mainImg.src = smallimg[1].src;
-}
-smallimg[2].onclick = function () {
-    mainImg.src = smallimg[2].src;
-}
-smallimg[3].onclick = function () {
-    mainImg.src = smallimg[3].src;
-}
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
 
 
 
-function changeImage (x,imgage) 
+// FOTOS HOME
+function changeImage1 (x,imgage) 
 {
 if (x == 1)
 {
@@ -27,3 +24,28 @@ if (x == 2)
 imgage.src = 'assets/surfing_foto.png';
 }
 }
+
+function changeImage2 (x,imgage) 
+{
+if (x == 1)
+{
+imgage.src = 'assets/cassette_mockup.png';
+}
+if (x == 2)
+{
+imgage.src = 'assets/cassette_foto.png';
+}
+}
+
+function changeImage3 (x,imgage) 
+{
+if (x == 1)
+{
+imgage.src = 'assets/cloud_mockup.png';
+}
+if (x == 2)
+{
+imgage.src = 'assets/cloud_foto.png';
+}
+}
+
