@@ -111,8 +111,7 @@
         margin: 0 3px;
         width: 40px;
         height: 40px;
-    }
-    
+    } 
 }
 .toggle-container{
     position: absolute;
@@ -133,7 +132,7 @@
 
 .toggle{
     height: 100%;
-    background: linear-gradient(to right, #2FA293, #5c6362);
+    background: linear-gradient(to right, #000000, #373737);
     color: #fff;
     position: relative;
     left: -100%;
@@ -179,8 +178,36 @@
     transform: translateX(200%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .form-container, .toggle-container {
         padding-top: 250px;
+    }
+}
+@media (max-width: 450px) {
+    .form-container, .toggle-container {
+        .login-h {
+            font-family: $font-krona;
+            font-size: 16px;
+        }
+        input{
+            font-size: 10px;
+        }
+        .login-p {
+            font-size: 12px;
+        }
+        span{
+            font-size: 10px;
+        }
+        a{
+            font-size: 10px;
+        }
+    }
+    .social-icons{
+        margin: 10px 0;
+        a{
+            width: 20px;
+            height: 20px;
+            margin: 0 1px;
+        } 
     }
 }

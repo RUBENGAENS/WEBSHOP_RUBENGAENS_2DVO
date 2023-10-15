@@ -30,6 +30,7 @@
     <script src="https://kit.fontawesome.com/2fb07d68d9.js" crossorigin="anonymous"></script>
 
     <script defer src="fotoslider.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -41,8 +42,8 @@
 
             <ul>
                 <li ><a href="index.html">Home</a></li>
-                <li><a href="#"><span>Shop</span></a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="shop.html"><span>Shop</span></a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
             <ul>
                 <li><a href="login.html" class="login_button">Login</a></li>
@@ -66,13 +67,13 @@
                     <img src="assets/puzzle_foto.png"  width="100%" class="small-img" alt="small foto">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/portal_foto.png" width="100%" class="small-img" alt="small foto">
+                    <img src="assets/puzzles_mockup.png" width="100%" class="small-img" alt="small foto">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/riverwalk_foto.png" width="100%" class="small-img" alt="small foto">
+                    <img src="assets/puzzle_mockup2.png" width="100%" class="small-img" alt="small foto">
                 </div>
                 <div class="small-img-col">
-                    <img src="assets/surfing_foto.png" width="100%" class="small-img" alt="small foto">
+                    <img src="assets/puzzle_mockup3.png" width="100%" class="small-img" alt="small foto">
                 </div>
             </div>
         </div>
@@ -97,28 +98,30 @@
 <section class="spotlights_shop">
     <h2 class="f-pro">FEATURED PRODUCTS</h2>
     <p class="f-under">You might also like this</p>
-    <div class="fotos">
-        <div class="spotlight1" onclick="window.location.href='singleProduct.html';">
-            <img src="assets/surfing_foto.png" class="picture" onmouseover="changeImage1(1,this)"
-            onmouseout="changeImage1(2,this)" alt="foto1">
-            <h3>Surfing</h3>
-            <p class="price">from 24,99 EUR</p>
+    <section class="spotlights_shop">
+        <div class="fotos">
+            <div class="spotlight1">
+                <img src="assets/smile_foto.png" class="picture" onmouseover="changeImage_shop8(1,this)"
+                onmouseout="changeImage_shop8(2,this)" alt="foto10">
+                <h3>Smile</h3>
+                <p class="price">from 24,99 EUR</p>
+            </div>
+    
+            <div class="spotlight2">
+                <img src="assets/brokenpieces_foto.png" class="picture" onmouseover="changeImage_shop9(1,this)"
+                onmouseout="changeImage_shop9(2,this)" alt="foto11">
+                <h3>Broken Pieces</h3>
+                <p class="price">from 24,99 EUR</p>
+            </div>
+    
+            <div class="spotlight3">
+                <img src="assets/leave_foto.png" class="picture" onmouseover="changeImage_shop10(1,this)"
+                onmouseout="changeImage_shop10(2,this)" alt="foto12">
+                <h3>Leave</h3>
+                <p class="price">from 24,99 EUR</p>
+            </div>
         </div>
-
-        <div class="spotlight2">
-            <img src="assets/cassette_foto.png" class="picture" onmouseover="changeImage2(1,this)"
-            onmouseout="changeImage2(2,this)" alt="foto2">
-            <h3>Cassette</h3>
-            <p class="price">from 24,99 EUR</p>
-        </div>
-
-        <div class="spotlight3">
-            <img src="assets/cloud_foto.png" class="picture" onmouseover="changeImage3(1,this)"
-            onmouseout="changeImage3(2,this)" alt="foto3">
-            <h3>Cloud</h3>
-            <p class="price">from 24,99 EUR</p>
-        </div>
-    </div>
+    </section>
 </section>
 
 <footer id="footer">
@@ -151,10 +154,11 @@
                 <button type="submit"><i class="fas fa-arrow-right"></i></button>
             </form>
             <div class="social-icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-pinterest"></i> 
+                
+                    <a href="https://www.facebook.com/" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" class="icon"><i class="fa-brands fa-pinterest"></i></a>
             </div>
         </div>
     </div>
