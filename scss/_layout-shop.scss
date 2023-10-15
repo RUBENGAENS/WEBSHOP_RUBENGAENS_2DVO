@@ -109,7 +109,22 @@ section {
         }
     }
 
-
+#pagination {
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    a {
+        font-family: $font-roboto;
+        text-decoration: none;
+        padding: 15px 20px;
+        font-weight: 600;
+        color: #000;
+        i {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
 
 
 
